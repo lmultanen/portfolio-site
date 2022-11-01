@@ -40,3 +40,47 @@ body {
 #home-container .home-info {
   align-self: baseline;
 }
+.small-logo {
+  height: 24px;
+  width: 24px;
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+}
+.contact-container div {
+  margin: 0.5em;
+  display: flex;
+  align-items: center;
+}
+.contact-container div a {
+  margin-left: 0.5em;
+}
+#projects-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 1em;
+  align-items: center;
+}
+#projects-container .project-block {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1em;
+}
+#projects-container .project-block .media {
+  margin-top: 1em;
+}
+#projects-container .project-block p {
+  margin-top: 0.5em;
+  max-width: 65%;
+}
+#projects-container .project-block .short-desc {
+  font-style: italic;
+  font-weight: bold;
+  font-size: large;
+  max-width: 100%;
+  text-align: center;
+}
