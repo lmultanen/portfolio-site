@@ -1,0 +1,44 @@
+.about-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1em;
+    .about-link {
+        font-size: x-large;
+        font-weight: bold;
+    }
+    .about-link:hover {
+        cursor: pointer;
+        color: white;
+    }
+    .selected {
+        color: white;
+        // text-decoration: underline;
+        border-bottom: 2px solid white;
+        padding-bottom: .25em;
+    }
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 2em;
+    img {
+        width: 50%;
+        max-width: 300px;
+    }
+    div {
+        max-width: 90%;
+        margin: auto;
+    }
+    p {
+        justify-content: flex-start;
+    }
+}
+
+.hidden {
+    display: none;
+}

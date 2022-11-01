@@ -11,9 +11,11 @@ const Projects = () => {
 
     return(
         <div id="projects-container">
+            <h1 className="projects-page-title">Featured Projects</h1>
+            <h5>To see other things I have worked on, feel free to check out my GitHub profile under the 'Contact' tab!</h5>
             <div className="project-block">
-                <h1>Hello Kitchen</h1>
-                <h3>October 2022</h3>
+                <h2>Hello Kitchen</h2>
+                <h4>October 2022</h4>
                 <div className="project-links">
                     <a target={'_blank'} href="https://github.com/Team-Rowlf/Rowlf">GitHub</a>{' | '}
                     <a target={'_blank'} href="https://rowlf.herokuapp.com/">Deployed Site</a>
@@ -22,11 +24,11 @@ const Projects = () => {
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/1-joatVRUpQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
                 <p className="short-desc">An application for recipe ideas and grocery shopping made easy!</p>
-                <p>Developed along with three of my cohort peers for our bootcamp Capstone final project.</p>
+                <p>Developed along with three of my cohort peers for our bootcamp's Capstone final project.</p>
             </div>
             <div className="project-block">
-                <h1>Courage Costumes</h1>
-                <h3>September 2022</h3>
+                <h2>Courage Costumes</h2>
+                <h4>September 2022</h4>
                 <div className="project-links">
                     <a target={'_blank'} href="https://github.com/FSA-Courage-The-Cowardly-Dog/shopper">GitHub</a>{' | '}
                     <a target={'_blank'} href="https://courage-grace-shopper.herokuapp.com/">Deployed Site</a>
@@ -40,8 +42,8 @@ const Projects = () => {
             </div>
 
             <div className="project-block">
-                <h1>Escape Room Game</h1>
-                <h3>September 2022 - Present</h3>
+                <h2>Escape Room Game</h2>
+                <h4>September 2022 - Present</h4>
                 <div className="project-links">
                     <a target={'_blank'} href="https://github.com/lmultanen/stackathon">GitHub</a>{' | '}
                     <span id="coming-soon">Deployed Site Coming Soon!</span>
