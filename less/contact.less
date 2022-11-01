@@ -4,13 +4,32 @@
 }
 .contact-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     div {
         margin: .5em;
         display: flex;
         align-items: center;
         a {
             margin-left: .5em;
+            color: blue;
         }
+        a:hover {
+            color: purple;
+        }
+    }
+}
+
+#contact-page {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    align-items: center;
+    img {
+        width: 50%;
+    }
+    h2 {
+        text-align: center;
     }
 }

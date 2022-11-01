@@ -3,11 +3,11 @@ import React from "react";
 const Home = () => {
     return(
         <div id="home-container">
-            <h1>Luke Multanen</h1>
+            <h2>Former Derivatives Trader, Current Full-Stack Web Developer</h2>
             <br/>
-            <h4>Former Derivatives Trader, Current Full-Stack Web Developer</h4>
+            <img className="home-bitmoji" src="/bitmojis/bitmoji-laptop.png"/>
             <br/>
-            <p>(insert stylized headshot here, maybe pixelated)</p>
+            <p className="home-info">Hi, my name is Luke!</p>
             <br/>
             <p className="home-info">I left my career in finance in early 2022 to pursue a career in software development.</p>
             <br/>
