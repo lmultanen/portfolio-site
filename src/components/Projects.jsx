@@ -1,6 +1,14 @@
 import React from "react";
+import Carousel from "./Carousel.jsx";
 
 const Projects = () => {
+    const pictures = [
+        "/screenshots/costume-homepage.png",
+        "/screenshots/mens-costumes.png",
+        "/screenshots/single-costume.png",
+        "/screenshots/cart.png",
+        "/screenshots/stripe-checkout.png"];
+
     return(
         <div id="projects-container">
             <div className="project-block">
@@ -11,7 +19,7 @@ const Projects = () => {
                     <a target={'_blank'} href="https://rowlf.herokuapp.com/">Deployed Site</a>
                 </div>
                 <div className="media">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1-joatVRUpQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1-joatVRUpQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
                 <p className="short-desc">An application for recipe ideas and grocery shopping made easy!</p>
                 <p>Developed along with three of my cohort peers for our bootcamp Capstone final project.</p>
@@ -24,7 +32,8 @@ const Projects = () => {
                     <a target={'_blank'} href="https://courage-grace-shopper.herokuapp.com/">Deployed Site</a>
                 </div>
                 <div className="media">
-                    <p>(Could add in a few photos/screenshots; maybe a nice carousel!)</p>
+                    {/* <img src="/screenshots/costume-homepage.png" alt="Costume Shop Homepage"/> */}
+                    <Carousel data={pictures}/>
                 </div>
                 <p className="short-desc">A mock E-Commerce halloween costume shop.</p>
                 <p>Website built alongside two other cohort members for our bootcamp's Grace Shopper project.</p>
@@ -38,7 +47,7 @@ const Projects = () => {
                     <span id="coming-soon">Deployed Site Coming Soon!</span>
                 </div>
                 <div className="media">
-                    <p>(Look to make a demo video to embed here)</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tATUimXWkIw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
                 <p className="short-desc">Solo project started during my bootcamp's three day Stackathon.</p>
                 <p>This was an opportunity for me to play around with Three.js and build something fun and different. New features/puzzles and deployed game coming soon!</p>
