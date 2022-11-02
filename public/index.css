@@ -138,11 +138,11 @@ body::after {
   align-items: center;
 }
 .contact-container div a {
-  margin-left: 0.5em;
-  color: blue;
+  margin: 2em;
 }
-.contact-container div a:hover {
-  color: white;
+.contact-container div a .small-logo {
+  width: 48px;
+  height: auto;
 }
 #contact-page {
   display: flex;
@@ -152,7 +152,7 @@ body::after {
   margin-bottom: 2em;
   align-items: center;
 }
-#contact-page img {
+#contact-page #contact-img {
   width: 50%;
   max-width: 350px;
 }
@@ -160,10 +160,6 @@ body::after {
   text-align: center;
   margin-right: 1em;
   margin-left: 1em;
-}
-.small-logo {
-  max-width: 24px;
-  height: auto;
 }
 #projects-container {
   display: flex;
