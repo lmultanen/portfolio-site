@@ -3,13 +3,12 @@
     flex-direction: column;
     margin: auto;
     align-items: center;
-    h1 {
+    .projects-page-title {
         margin-top: .5em;
         margin-bottom: .5em;
         text-align: center;
         max-width: 75%;
         font-family: 'Impact';
-        // letter-spacing: .025em;
     }
     h5 {
         margin-bottom: 1em;
@@ -28,20 +27,39 @@
         padding-left: 1em;
         padding-right: 1em;
         box-sizing: border-box;
-        // background-color: rgba(149, 152, 188, .25);
         background-color: rgba(21, 27, 84, 0.25);
         * {
             font-style: italic;
             font-family: 'Palatino';
-            text-shadow: -1px 1px 0 black;
             color: white;
+        }
+        .project-links {
+            margin-top: .25em;
         }
         a {
-            color: blue;
-            text-shadow: none;
+            padding-bottom: .25em;
+            text-decoration: none;
+            font-style: normal;
+            display: inline-block;
+            position: relative;
         }
-        a:hover {
-            color: white;
+        a:after {    
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: inline-block;
+            height: 2px;
+            left: 0;
+            width: 100%; 
+            position: absolute;
+            background: #fff;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        a:hover:after { 
+            transform: scaleX(1);
+            transform-origin: bottom left;
         }
         .media {
             margin-top: 1em;
@@ -53,7 +71,9 @@
             max-width: 65%;
             margin-bottom: 1em;
         }
-        h2 {
+        .project-name {
+            font-style: normal;
+            text-shadow: -1px 1px 0 black;
             margin-top: .5em;
         }
         .short-desc {
@@ -67,8 +87,6 @@
         margin-bottom: 1em;
     }
     .project-block:nth-child(even) {
-        // background-color: rgba(101, 113, 228, 0.25);
-        // background-color: rgba(132, 139, 221, 0.25);
-        background-color: rgba(161, 166, 226, 0.25);
+        background-color: rgba(12, 14, 41, 0.25);
     }
 }

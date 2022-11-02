@@ -1,7 +1,7 @@
 #navbar {
     display: flex;
     flex-direction: row;
-    height: 50px;
+    height: 80px;
     justify-content: center;
     align-items: center;
     background-color: black;
@@ -43,9 +43,15 @@
         transform-origin: bottom left;
     }
 }
-  
 
-// things to add: highlight or underline selected page maybe?
-// style the header somewhat; could add in some other logo or something for home button
-// add some other animations
-// could add in collapsible menu for smaller window sizes
+@media screen and (max-width: 600px){
+    #navbar {
+        height: 150px;
+        a {
+            font-size: x-large;
+        }
+        .selected {
+            border-bottom: 2px solid white;
+        }
+    }
+}

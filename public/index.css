@@ -21,7 +21,7 @@ body::after {
 #navbar {
   display: flex;
   flex-direction: row;
-  height: 50px;
+  height: 80px;
   justify-content: center;
   align-items: center;
   background-color: black;
@@ -62,6 +62,17 @@ body::after {
 #navbar a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+@media screen and (max-width: 600px) {
+  #navbar {
+    height: 150px;
+  }
+  #navbar a {
+    font-size: x-large;
+  }
+  #navbar .selected {
+    border-bottom: 2px solid white;
+  }
 }
 #home-container {
   display: flex;
@@ -167,7 +178,7 @@ body::after {
   margin: auto;
   align-items: center;
 }
-#projects-container h1 {
+#projects-container .projects-page-title {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   text-align: center;
@@ -197,15 +208,35 @@ body::after {
 #projects-container .project-block * {
   font-style: italic;
   font-family: 'Palatino';
-  text-shadow: -1px 1px 0 black;
   color: white;
+}
+#projects-container .project-block .project-links {
+  margin-top: 0.25em;
 }
 #projects-container .project-block a {
-  color: blue;
-  text-shadow: none;
+  padding-bottom: 0.25em;
+  text-decoration: none;
+  font-style: normal;
+  display: inline-block;
+  position: relative;
 }
-#projects-container .project-block a:hover {
-  color: white;
+#projects-container .project-block a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  background: #fff;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+#projects-container .project-block a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 #projects-container .project-block .media {
   margin-top: 1em;
@@ -217,7 +248,9 @@ body::after {
   max-width: 65%;
   margin-bottom: 1em;
 }
-#projects-container .project-block h2 {
+#projects-container .project-block .project-name {
+  font-style: normal;
+  text-shadow: -1px 1px 0 black;
   margin-top: 0.5em;
 }
 #projects-container .project-block .short-desc {
@@ -229,7 +262,7 @@ body::after {
   margin-bottom: 0.25em;
 }
 #projects-container .project-block:nth-child(even) {
-  background-color: rgba(161, 166, 226, 0.25);
+  background-color: rgba(12, 14, 41, 0.25);
 }
 .carousel {
   width: 100%;
@@ -300,6 +333,7 @@ body::after {
 .about-links .about-link:hover {
   cursor: pointer;
   color: white;
+  text-shadow: -1px 1px 0 black;
 }
 .about-links .about-link:after {
   background: none repeat scroll 0 0 transparent;
@@ -322,6 +356,7 @@ body::after {
 .about-links .selected {
   color: white;
   border-bottom: 2px solid white;
+  text-shadow: -1px 1px 0 black;
 }
 .about-links .selected:after {
   transform: scaleX(0);

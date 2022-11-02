@@ -14,7 +14,7 @@ const Projects = () => {
             <h1 className="projects-page-title">Featured Projects</h1>
             <h5>To see other things I have worked on, feel free to check out my GitHub profile under the 'Contact' tab!</h5>
             <div className="project-block">
-                <h2>Hello Kitchen</h2>
+                <h1 className="project-name">Hello Kitchen</h1>
                 <h4>October 2022</h4>
                 <div className="project-links">
                     <a target={'_blank'} href="https://github.com/Team-Rowlf/Rowlf">GitHub</a>{' | '}
@@ -27,7 +27,7 @@ const Projects = () => {
                 <p>Developed along with three of my cohort peers for our bootcamp's Capstone final project.</p>
             </div>
             <div className="project-block">
-                <h2>Courage Costumes</h2>
+                <h1 className="project-name">Courage Costumes</h1>
                 <h4>September 2022</h4>
                 <div className="project-links">
                     <a target={'_blank'} href="https://github.com/FSA-Courage-The-Cowardly-Dog/shopper">GitHub</a>{' | '}
@@ -42,7 +42,7 @@ const Projects = () => {
             </div>
 
             <div className="project-block">
-                <h2>Escape Room Game</h2>
+                <h1 className="project-name">Escape Room Game</h1>
                 <h4>September 2022 - Present</h4>
                 <div className="project-links">
                     <a target={'_blank'} href="https://github.com/lmultanen/stackathon">GitHub</a>{' | '}
