@@ -6,7 +6,7 @@
     margin: auto;
     margin-top: 2em;
     margin-bottom: 2em;
-    div {
+    .welcome-info {
         max-width: 400px;
         margin: auto;
         background-color: #FCF5E5;
@@ -14,28 +14,28 @@
         padding: 30px;
         position: relative;
     }
-    div, 
-    div::before, 
-    div::after {
+    .welcome-info, 
+    .welcome-info::before, 
+    .welcome-info::after {
         box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
         border: 1px solid #bbb;
     }
-    div::before,
-    div::after {
+    .welcome-info::before,
+    .welcome-info::after {
         content: "";
         position: absolute;
         height: 95%;
         width: 99%;
         background-color: #FCF5E5;
     }
-    div::before {
+    .welcome-info::before {
         right: 15px;
         top: 0;
         transform: rotate(-1deg);
         z-index: -1;
     }
       
-    div::after {
+    .welcome-info::after {
         top: 5px;
         right: -5px;
         transform: rotate(1deg);

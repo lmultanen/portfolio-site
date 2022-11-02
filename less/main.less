@@ -17,5 +17,15 @@ body::after {
     position: fixed;
     z-index: -3;
     background-repeat: no-repeat;
-    background-size: cover;
-  }
+    min-height: 100vh;
+}
+
+.nav-buffer {
+    height: 80px;
+}
+
+@media screen and (max-width: 500px){
+    .nav-buffer {
+        height: 150px
+    }
+}

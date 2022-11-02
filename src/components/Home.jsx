@@ -3,11 +3,12 @@ import React from "react";
 const Home = () => {
     return(
         <div id="home-container">
+            <div className="nav-buffer"/>
             <h2>Former Derivatives Trader, Current Full-Stack Web Developer</h2>
             <br/>
             <img className="home-bitmoji" src="/bitmojis/bitmoji-laptop.png"/>
             <br/>
-            <div>
+            <div className="welcome-info">
                 <p className="home-info">Hi! My name is Luke!</p>
                 <br/>
                 <p className="home-info">I left my career in finance in early 2022 to pursue a career in software development.</p>

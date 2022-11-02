@@ -11,6 +11,7 @@ const Projects = () => {
 
     return(
         <div id="projects-container">
+            <div className="nav-buffer"/>
             <h1 className="projects-page-title">Featured Projects</h1>
             <h5>To see other things I have worked on, feel free to check out my GitHub profile under the 'Contact' tab!</h5>
             <div className="project-block">

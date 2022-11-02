@@ -16,7 +16,15 @@ body::after {
   position: fixed;
   z-index: -3;
   background-repeat: no-repeat;
-  background-size: cover;
+  min-height: 100vh;
+}
+.nav-buffer {
+  height: 80px;
+}
+@media screen and (max-width: 500px) {
+  .nav-buffer {
+    height: 150px;
+  }
 }
 #navbar {
   display: flex;
@@ -25,6 +33,10 @@ body::after {
   justify-content: center;
   align-items: center;
   background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
 }
 #navbar a {
   margin: 0.5em;
@@ -86,7 +98,7 @@ body::after {
   margin-top: 2em;
   margin-bottom: 2em;
 }
-#home-container div {
+#home-container .welcome-info {
   max-width: 400px;
   margin: auto;
   background-color: #FCF5E5;
@@ -94,27 +106,27 @@ body::after {
   padding: 30px;
   position: relative;
 }
-#home-container div,
-#home-container div::before,
-#home-container div::after {
+#home-container .welcome-info,
+#home-container .welcome-info::before,
+#home-container .welcome-info::after {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
   border: 1px solid #bbb;
 }
-#home-container div::before,
-#home-container div::after {
+#home-container .welcome-info::before,
+#home-container .welcome-info::after {
   content: "";
   position: absolute;
   height: 95%;
   width: 99%;
   background-color: #FCF5E5;
 }
-#home-container div::before {
+#home-container .welcome-info::before {
   right: 15px;
   top: 0;
   transform: rotate(-1deg);
   z-index: -1;
 }
-#home-container div::after {
+#home-container .welcome-info::after {
   top: 5px;
   right: -5px;
   transform: rotate(1deg);
@@ -279,7 +291,7 @@ body::after {
   border-radius: 5%;
 }
 .arrows {
-  z-index: 99;
+  z-index: 1;
   position: absolute;
   height: 100%;
   width: 100%;

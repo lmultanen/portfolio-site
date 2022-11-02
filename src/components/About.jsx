@@ -7,6 +7,7 @@ const About = () => {
 
     return(
         <div id="about-container">
+            <div className="nav-buffer"/>
             <div className="about-links">
                 <div className={"about-link" + (past ? " selected" : "")}
                   onClick={() => {
