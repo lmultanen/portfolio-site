@@ -9,9 +9,41 @@
     div {
         max-width: 400px;
         margin: auto;
+        background-color: #FCF5E5;
+        box-sizing: border-box;
+        padding: 30px;
+        position: relative;
+    }
+    div, 
+    div::before, 
+    div::after {
+        box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+        border: 1px solid #bbb;
+    }
+    div::before,
+    div::after {
+        content: "";
+        position: absolute;
+        height: 95%;
+        width: 99%;
+        background-color: #FCF5E5;
+    }
+    div::before {
+        right: 15px;
+        top: 0;
+        transform: rotate(-1deg);
+        z-index: -1;
+    }
+      
+    div::after {
+        top: 5px;
+        right: -5px;
+        transform: rotate(1deg);
+        z-index: -2;
     }
     p {
         justify-content: flex-start;
+        font-family: 'papyrus';
     }
     h2 {
         text-align: center;
@@ -22,6 +54,14 @@
     }
     .home-info {
         align-self: baseline;
+    }
+    @media screen and (max-width: 600px){
+        #home-container {
+            width: 90%;
+            div {
+                width: 90%;
+            }
+        }
     }
 }
 
