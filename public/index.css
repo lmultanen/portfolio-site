@@ -162,8 +162,8 @@ body::after {
   margin-left: 1em;
 }
 .small-logo {
-  height: 24px;
   width: 24px;
+  height: auto;
 }
 #projects-container {
   display: flex;
