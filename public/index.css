@@ -27,7 +27,7 @@ body::after {
   background-color: black;
 }
 #navbar a {
-  margin-left: 1em;
+  margin: 0.5em;
   font-size: larger;
   text-decoration: none;
   color: white;
@@ -63,12 +63,12 @@ body::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   #navbar {
     height: 150px;
   }
   #navbar a {
-    font-size: x-large;
+    font-size: large;
   }
   #navbar .selected {
     border-bottom: 2px solid white;
@@ -253,7 +253,9 @@ body::after {
 }
 #projects-container .project-block .project-name {
   font-style: normal;
+  text-align: center;
   text-shadow: -1px 1px 0 black;
+  margin: auto;
   margin-top: 0.5em;
 }
 #projects-container .project-block .short-desc {

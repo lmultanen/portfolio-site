@@ -46,7 +46,7 @@ const Projects = () => {
                 <h4>September 2022 - Present</h4>
                 <div className="project-links">
                     <a target={'_blank'} href="https://github.com/lmultanen/stackathon">GitHub</a>{' | '}
-                    <span id="coming-soon">Deployed Site Coming Soon!</span>
+                    <span id="coming-soon">Site Coming Soon!</span>
                 </div>
                 <div className="media">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/tATUimXWkIw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
