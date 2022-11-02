@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Home from "./Home.jsx";
 import About from "./About.jsx";
 import Projects from "./Projects.jsx";
@@ -16,6 +16,7 @@ const RouteComponent = () => {
                 <Route path="/projects" element={<Projects />}/>
                 <Route path="/contact" element={<Contact />}/>
                 {/* Can include some error handling/catch all; maybe just redirect to home */}
+                <Route path="*" element={<Navigate to="/"/>}/>
             </Routes>
         </>
     )

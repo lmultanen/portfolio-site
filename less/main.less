@@ -1,12 +1,19 @@
 * {
     margin: 0px;
     max-width: 100%;
-    // font-family: 'Fuzzy Bubbles';
-    // overflow-x: hidden;
+    font-family: 'Optima';
 }
 #root {
     min-height: 100%;
 }
-body {
-    background-color: rgb(151, 151, 226);
-}
+
+body::after {
+    content: "";
+    background: url('background.jpg');
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+  }

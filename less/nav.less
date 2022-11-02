@@ -1,21 +1,49 @@
 #navbar {
     display: flex;
     flex-direction: row;
-    height: 80px;
+    height: 50px;
     justify-content: center;
     align-items: center;
-    background-color: rgb(101, 101, 101);
+    background-color: black;
     a {
         margin-left: 1em;
         font-size: larger;
         text-decoration: none;
-        // color: rgb(17, 17, 78);
-        color: rgb(151, 151, 226);
+        color: white;
+        display: inline-block;
+        position: relative;
+        padding-bottom: .25em;
     }
-    a:hover {
-        color: purple;
+    .selected {
+        border-bottom: 1px solid white;
+    }
+    .selected:after {
+        transform: scaleX(0);
+        transition: transform 0s;
+    }
+    .selected:hover:after {
+        transform: scaleX(0);
+    }
+    a:after {    
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        left: 0;
+        width: 100%; 
+        position: absolute;
+        background: #fff;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    a:hover:after { 
+        transform: scaleX(1);
+        transform-origin: bottom left;
     }
 }
+  
 
 // things to add: highlight or underline selected page maybe?
 // style the header somewhat; could add in some other logo or something for home button

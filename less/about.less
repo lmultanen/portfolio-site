@@ -6,16 +6,42 @@
     .about-link {
         font-size: x-large;
         font-weight: bold;
+        display: inline-block;
+        position: relative;
+        padding-bottom: .25em;
     }
     .about-link:hover {
         cursor: pointer;
         color: white;
     }
+    .about-link:after {    
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: inline-block;
+        height: 2px;
+        left: 0;
+        width: 100%; 
+        position: absolute;
+        background: #fff;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    .about-link:hover:after { 
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
     .selected {
         color: white;
-        // text-decoration: underline;
         border-bottom: 2px solid white;
-        padding-bottom: .25em;
+    }
+    .selected:after {
+        transform: scaleX(0);
+        transition: transform 0s;
+    }
+    .selected:hover:after {
+        transform: scaleX(0);
     }
 }
 

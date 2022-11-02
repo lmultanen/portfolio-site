@@ -1,29 +1,65 @@
 * {
   margin: 0px;
   max-width: 100%;
+  font-family: 'Optima';
 }
 #root {
   min-height: 100%;
 }
-body {
-  background-color: #9797e2;
+body::after {
+  content: "";
+  background: url('background.jpg');
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
 }
 #navbar {
   display: flex;
   flex-direction: row;
-  height: 80px;
+  height: 50px;
   justify-content: center;
   align-items: center;
-  background-color: #656565;
+  background-color: black;
 }
 #navbar a {
   margin-left: 1em;
   font-size: larger;
   text-decoration: none;
-  color: #9797e2;
+  color: white;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.25em;
 }
-#navbar a:hover {
-  color: purple;
+#navbar .selected {
+  border-bottom: 1px solid white;
+}
+#navbar .selected:after {
+  transform: scaleX(0);
+  transition: transform 0s;
+}
+#navbar .selected:hover:after {
+  transform: scaleX(0);
+}
+#navbar a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  background: #fff;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+#navbar a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 #home-container {
   display: flex;
@@ -69,7 +105,7 @@ body {
   color: blue;
 }
 .contact-container div a:hover {
-  color: purple;
+  color: white;
 }
 #contact-page {
   display: flex;
@@ -85,6 +121,8 @@ body {
 }
 #contact-page h2 {
   text-align: center;
+  margin-right: 1em;
+  margin-left: 1em;
 }
 #projects-container {
   display: flex;
@@ -97,6 +135,7 @@ body {
   margin-bottom: 0.5em;
   text-align: center;
   max-width: 75%;
+  font-family: 'Impact';
 }
 #projects-container h5 {
   margin-bottom: 1em;
@@ -115,8 +154,14 @@ body {
   padding-left: 1em;
   padding-right: 1em;
   box-sizing: border-box;
-  background-color: #5b60ab;
+  background-color: rgba(21, 27, 84, 0.25);
   margin-bottom: 1em;
+}
+#projects-container .project-block a {
+  color: blue;
+}
+#projects-container .project-block a:hover {
+  color: white;
 }
 #projects-container .project-block .media {
   margin-top: 1em;
@@ -138,6 +183,13 @@ body {
   max-width: 100%;
   text-align: center;
   margin-bottom: 0.25em;
+}
+#projects-container .project-block * {
+  font-style: italic;
+  font-family: 'Palatino';
+}
+#projects-container .project-block:nth-child(even) {
+  background-color: rgba(132, 139, 221, 0.25);
 }
 .carousel {
   width: 100%;
@@ -201,15 +253,42 @@ body {
 .about-links .about-link {
   font-size: x-large;
   font-weight: bold;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.25em;
 }
 .about-links .about-link:hover {
   cursor: pointer;
   color: white;
 }
+.about-links .about-link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  background: #fff;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.about-links .about-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 .about-links .selected {
   color: white;
   border-bottom: 2px solid white;
-  padding-bottom: 0.25em;
+}
+.about-links .selected:after {
+  transform: scaleX(0);
+  transition: transform 0s;
+}
+.about-links .selected:hover:after {
+  transform: scaleX(0);
 }
 .about-content {
   display: flex;
