@@ -128,10 +128,6 @@ body::after {
     width: 90%;
   }
 }
-.small-logo {
-  height: 24px;
-  width: 24px;
-}
 .contact-container {
   display: flex;
   flex-direction: row;
@@ -164,6 +160,10 @@ body::after {
   text-align: center;
   margin-right: 1em;
   margin-left: 1em;
+}
+.small-logo {
+  height: 24px;
+  width: 24px;
 }
 #projects-container {
   display: flex;
