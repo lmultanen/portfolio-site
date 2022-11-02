@@ -73,6 +73,9 @@ body::after {
   #navbar .selected {
     border-bottom: 2px solid white;
   }
+  #navbar a:after {
+    height: 2px;
+  }
 }
 #home-container {
   display: flex;
