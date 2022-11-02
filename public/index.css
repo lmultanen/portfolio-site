@@ -162,7 +162,7 @@ body::after {
   margin-left: 1em;
 }
 .small-logo {
-  width: 24px;
+  max-width: 24px;
   height: auto;
 }
 #projects-container {
