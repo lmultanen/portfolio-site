@@ -35,7 +35,6 @@ const Projects = () => {
                     <a target={'_blank'} href="https://courage-grace-shopper.herokuapp.com/">Deployed Site</a>
                 </div>
                 <div className="media">
-                    {/* <img src="/screenshots/costume-homepage.png" alt="Costume Shop Homepage"/> */}
                     <Carousel data={pictures}/>
                 </div>
                 <p className="short-desc">A mock E-Commerce halloween costume shop.</p>
@@ -47,13 +46,13 @@ const Projects = () => {
                 <h4>September 2022 - Present</h4>
                 <div className="project-links">
                     <a target={'_blank'} href="https://github.com/lmultanen/stackathon">GitHub</a>{' | '}
-                    <span id="coming-soon">Site Coming Soon!</span>
+                    <a target={'_blank'} href="https://main--musical-swan-248e4f.netlify.app/">Deployed Site</a>
                 </div>
                 <div className="media">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/tATUimXWkIw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
                 <p className="short-desc">Solo project started during my bootcamp's three day Stackathon.</p>
-                <p>This was an opportunity for me to play around with Three.js and build something fun and different. New features/puzzles and deployed game coming soon!</p>
+                <p>This was an opportunity for me to play around with Three.js and build something fun and different. New features and puzzles coming soon!</p>
             </div>
             
         </div>

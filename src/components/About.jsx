@@ -59,7 +59,7 @@ const About = () => {
                 <div>
                     <p>I am proficient in Javascript, CSS, HTML, React, and Redux, and I am knowledgable about several other JS modules with the ability to learn new ones quickly!</p>
                     <br/>
-                    <p>I am in the process of learning more about AWS with the aim of becoming a Certified Developer, and I am brushing up on other languages I have used in the past, such as Python and C#.</p>
+                    <p>I am in the process of learning more about AWS (as of November 8th, 2022, I am an AWS Certified Cloud Practitioner) with the goal of becoming a Certified Developer, and I am brushing up on other languages I have used in the past, such as Python and C#.</p>
                     <br/>
                     <p>Now that I have a bit more free time, I am excited to revisit my Escape Room game I built as my bootcamp Stackathon project. Keep your eyes peeled for a fully-deployed version with some added features!</p>
                 </div>
