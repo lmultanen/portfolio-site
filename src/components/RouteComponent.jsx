@@ -5,6 +5,7 @@ import About from "./About.jsx";
 import Projects from "./Projects.jsx";
 import Contact from "./Contact.jsx";
 import Nav from "./Nav.jsx";
+import Experience from "./Experience.jsx";
 
 const RouteComponent = () => {
     return(
@@ -12,9 +13,10 @@ const RouteComponent = () => {
             <Nav />
             <Routes>
                 <Route index element={<Home />}/>
-                <Route path="/aboutme" element={<About />}/>
+                {/* <Route path="/aboutme" element={<About />}/> */}
                 <Route path="/projects" element={<Projects />}/>
-                <Route path="/contact" element={<Contact />}/>
+                {/* <Route path="/contact" element={<Contact />}/> */}
+                <Route path="/experience" element={<Experience />}/>
                 {/* Can include some error handling/catch all; maybe just redirect to home */}
                 <Route path="*" element={<Navigate to="/"/>}/>
             </Routes>

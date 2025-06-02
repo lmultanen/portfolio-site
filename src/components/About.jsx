@@ -6,6 +6,7 @@ const About = () => {
     const [future, setFuture] = useState(false);
 
     return(
+        // may make new component; should have a technical skills section, then a work history section       
         <div id="about-container">
             <div className="nav-buffer"/>
             <div className="about-links">
